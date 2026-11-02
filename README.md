@@ -69,8 +69,6 @@ That depth is what gives Goblin Horde a competitive multiplayer feel inside a si
 
 ## Gear, cases, slots, and talent trees
 
-These systems live in the current local build (ahead of the private GitHub mirror).
-
 ### Gear and items
 Nine worn slots from helm to ring. Pieces roll rarity from Common to Legendary with multiple stat lines (health, armor, damage, crit, area, gold find, and more). Stash and worn loadouts are saved per hero so loadout choices stick between runs.
 
@@ -112,7 +110,7 @@ Useful for recruiters looking for someone who can **own a game loop end-to-end**
 ## Links
 
 - YouTube shorts / gameplay: [youtube.com/@thebearjoe5304](https://www.youtube.com/@thebearjoe5304)
-- Full production repo: private (Steam-bound; local build is ahead of the public mirror)
+- Full production repo: private (Steam-bound)
 - Other public Unity work: [Celestial Solitaire](https://github.com/thejoebear/puzzlecardgame) (rename / README polish in progress)
 
 ---
