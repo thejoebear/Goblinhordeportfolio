@@ -17,6 +17,8 @@
 
 Goblin Horde is a single-player survivor run set inside a living village, not an empty arena. You pick a hero, draft weapons and upgrades as you level, and the horde pathfinds around forests, water, and buildings instead of walking through them. Survive to 10:00, then face one of three climax bosses.
 
+Under the hood, a deep scoring and leaderboard system gives solo runs a competitive multiplayer feel: live rank on the HUD, kill-bucket points with hit penalties, and Steam boards where your curve races other players' real runs.
+
 ---
 
 ## What I designed and built
@@ -26,6 +28,7 @@ Solo project: systems design, content design, Unity implementation, and UI.
 | Area | What shipped |
 | --- | --- |
 | Core loop | 10-minute timed run, auto-firing weapons, dash, XP gems, level-up draft, chest drafts, end-of-run gold |
+| Scoring / rivalry | Kill-bucket scoring with hit penalties, live HUD rank, 30-point score curves, Steam KeepBest board with real players; ranked score locks at boss clear so endless play stays for fun |
 | Heroes | 21 heroes with health/stat blocks, starting weapons, bag/stash sizes, traits, and signatures (Warden free; others unlock via feats or gold) |
 | Draft / buildcraft | Card picks on level-up and chests; weapon fusion into Supers; inventory and stash pressure |
 | Combat space | Off-screen spawns into the village; melee swarm, camped ranged, brutes/elites; early-run move-speed ramp so new players are not wiped in the first minute |
@@ -41,6 +44,21 @@ Solo project: systems design, content design, Unity implementation, and UI.
 2. **Draft tension, not just power.** Every level-up is a choice; chests are bigger bets; fusions reward committing to a build.
 3. **Readable pressure curve.** Half-speed then 70% speed early; health scales so a finished build still has something to chew on.
 4. **Hero fantasy first.** Signatures and traits make each run feel like a different character, not a reskin.
+5. **Compete without co-op.** Deep scoring and live rank against real players make a solo run feel like multiplayer rivalry.
+
+---
+
+## Scoring and competitive feel
+
+Solo runs are ranked against real players, not just survived.
+
+- **Kill buckets:** grunts, reds, specialists, elites, and champions bank points at phase rates as they die.
+- **Hit debt:** every accepted hit shaves a slice of your live total (projectile hits and contact bumps use different fractions), so reckless play costs rank.
+- **Live HUD rank:** your place on the board updates during the run so you feel other players mid-fight, not only on a recap screen.
+- **Score curves:** every 20 seconds the game stores your real score (30 checkpoints across the 10-minute run). Those curves power fair comparisons against other players' actual runs.
+- **Steam board:** personal-best KeepBest uploads from real players; ranked score locks when the boss dies so post-clear endless mode does not overwrite a fair result.
+
+That depth is what gives Goblin Horde a competitive multiplayer feel inside a single-player survivor loop.
 
 ---
 
@@ -54,6 +72,7 @@ These are **excerpts from the private production repo**, chosen to show design s
 | [`samples/XPManager.cs`](samples/XPManager.cs) | XP, leveling, and the pause-into-draft handoff |
 | [`samples/WeaponBase.cs`](samples/WeaponBase.cs) | Shared weapon behaviour for the auto-fire loadout |
 | [`samples/KillCounter.cs`](samples/KillCounter.cs) | Small run metric used by UI and end-of-run scoring |
+| [`samples/ScoreCurve.cs`](samples/ScoreCurve.cs) | Checkpoint score curves packed for Steam leaderboard rivalry |
 
 Not included on purpose: full weapon/upgrade databases, scenes, prefabs, art, audio, and anything that would recreate a playable build.
 
@@ -61,7 +80,7 @@ Not included on purpose: full weapon/upgrade databases, scenes, prefabs, art, au
 
 ## Role fit
 
-Useful for recruiters looking for someone who can **own a game loop end-to-end**: draft/economy systems, enemy pacing, hero differentiation, and shipping that design in Unity C#.
+Useful for recruiters looking for someone who can **own a game loop end-to-end**: draft/economy systems, enemy pacing, competitive scoring and leaderboards, hero differentiation, and shipping that design in Unity C#.
 
 ---
 
