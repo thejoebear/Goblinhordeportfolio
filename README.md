@@ -111,7 +111,7 @@ Useful for recruiters looking for someone who can **own a game loop end-to-end**
 
 - YouTube shorts / gameplay: [youtube.com/@thebearjoe5304](https://www.youtube.com/@thebearjoe5304)
 - Full production repo: private (Steam-bound)
-- Other public Unity work: [Celestial Solitaire](https://github.com/thejoebear/puzzlecardgame) (rename / README polish in progress)
+- Other public Unity work: [Celestial Solitaire](https://github.com/thejoebear/puzzlecardgame)
 
 ---
 
