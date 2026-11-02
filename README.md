@@ -7,10 +7,7 @@
 **Status:** In development · PC (landscape) · Unity 6 · Planned Steam release  
 **Designer / builder:** [Joseph Abraham](https://github.com/thejoebear) · YouTube: [@thebearjoe5304](https://www.youtube.com/@thebearjoe5304)
 
-<!-- Drop GIFs or a short trailer into /media and uncomment:
-![Gameplay](media/gameplay.gif)
-[Watch trailer](https://youtube.com/...)
--->
+![Holding the village objective as a red goblin horde closes in](media/gameplay.gif)
 
 ---
 
