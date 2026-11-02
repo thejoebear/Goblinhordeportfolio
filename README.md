@@ -4,7 +4,7 @@
 
 > This is a **portfolio showcase**, not the full game. The production Unity project stays private while I prepare a Steam release. Sample scripts below show how key systems are built. They will not compile as a standalone project.
 
-**Status:** In development · PC (landscape) · Unity 6 · Planned Steam release  
+**Status:** In development · PC (landscape) · Unity 6 · 21 unique heroes · Planned Steam release  
 **Designer / builder:** [Joseph Abraham](https://github.com/thejoebear) · YouTube: [@thebearjoe5304](https://www.youtube.com/@thebearjoe5304)
 
 ![Holding the village objective as a red goblin horde closes in](media/gameplay.gif)
@@ -15,7 +15,7 @@
 
 ## Pitch
 
-Goblin Horde is a single-player survivor run set inside a living village, not an empty arena. You pick a hero, draft weapons and upgrades as you level, and the horde pathfinds around forests, water, and buildings instead of walking through them. Survive to 10:00, then face one of three climax bosses.
+Goblin Horde is a single-player survivor run set inside a living village, not an empty arena. You pick from **21 unique heroes**, draft weapons and upgrades as you level, and the horde pathfinds around forests, water, and buildings instead of walking through them. Survive to 10:00, then face one of three climax bosses.
 
 Between runs, a full meta layer keeps the loop sticky: gear with case openings, Goblin Slots, and per-hero talent trees. Under the hood, a deep scoring and leaderboard system gives solo runs a competitive multiplayer feel against real players on Steam.
 
@@ -33,7 +33,7 @@ Solo project: systems design, content design, Unity implementation, and UI.
 | Case openings | Paid case tiers that reel to the won piece, with epic/legendary holds before the stash line |
 | Goblin Slots | Meta slot machine: 5 reels, 3 rows, 20 lines, wilds, charms, free spins; Den / Warcamp / Warchief stakes |
 | Talent trees | Three trees per hero (offense, mobility, survival or signature) with gated layouts, climax nodes, and unique hooks |
-| Heroes | 21 heroes with health/stat blocks, starting weapons, bag/stash sizes, traits, and signatures (Warden free; others unlock via feats or gold) |
+| Heroes | **21 unique heroes**, each with its own stats, starting weapons, bag/stash, trait, signature, and three talent trees (Warden free; others unlock via feats or gold) |
 | Draft / buildcraft | Card picks on level-up and chests; weapon fusion into Supers; inventory and stash pressure |
 | Combat space | Off-screen spawns into the village; melee swarm, camped ranged, brutes/elites; early-run move-speed ramp so new players are not wiped in the first minute |
 | Objectives | Optional map objectives that pay a boon if completed |
