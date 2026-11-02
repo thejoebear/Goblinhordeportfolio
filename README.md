@@ -9,6 +9,8 @@
 
 ![Holding the village objective as a red goblin horde closes in](media/gameplay.gif)
 
+![Level-up boon pick: Magnet, Haste, or Iron, each with its own stat](media/draft.gif)
+
 ---
 
 ## Pitch
